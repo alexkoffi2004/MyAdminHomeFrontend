@@ -13,6 +13,28 @@ const Login = lazy(() => import('./pages/Auth/Login'));
 const Register = lazy(() => import('./pages/Auth/Register'));
 const ForgotPassword = lazy(() => import('./pages/Auth/ForgotPassword'));
 
+// Citizen Pages
+const CitizenDashboard = lazy(() => import('./pages/Citizen/Dashboard'));
+const NewRequest = lazy(() => import('./pages/Citizen/NewRequest'));
+const RequestTracking = lazy(() => import('./pages/Citizen/RequestTracking'));
+const RequestDetail = lazy(() => import('./pages/Citizen/RequestDetail'));
+const Payment = lazy(() => import('./pages/Citizen/Payment'));
+const Profile = lazy(() => import('./pages/Citizen/Profile'));
+
+// Agent Pages
+const AgentDashboard = lazy(() => import('./pages/Agent/Dashboard'));
+const RequestsList = lazy(() => import('./pages/Agent/RequestsList'));
+const ProcessRequest = lazy(() => import('./pages/Agent/ProcessRequest'));
+const GenerateDocument = lazy(() => import('./pages/Agent/GenerateDocument'));
+const History = lazy(() => import('./pages/Agent/History'));
+
+// Admin Pages
+const AdminDashboard = lazy(() => import('./pages/Admin/Dashboard'));
+const UserManagement = lazy(() => import('./pages/Admin/UserManagement'));
+const DocumentTypes = lazy(() => import('./pages/Admin/DocumentTypes'));
+const PaymentTracking = lazy(() => import('./pages/Admin/PaymentTracking'));
+const Statistics = lazy(() => import('./pages/Admin/Statistics'));
+
 
 const App = () => {
   const { user, isLoading, checkAuthStatus } = useAuth();
